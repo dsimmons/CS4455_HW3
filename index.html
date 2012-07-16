@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Tower Defense Reloaded M3</title>
+		<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
+		<script type="text/javascript">
+		<!--
+		function GetUnity() {
+			if (typeof unityObject != "undefined") {
+				return unityObject.getObjectById("unityPlayer");
+			}
+			return null;
+		}
+		if (typeof unityObject != "undefined") {
+			unityObject.embedUnity("unityPlayer", "m3.unity3d", 960, 600);
+			
+		}
+		-->
+		</script>
+		<style type="text/css">
+		<!--
+		body {
+			font-family: Helvetica, Verdana, Arial, sans-serif;
+			background-color: white;
+			color: black;
+			<!--text-align: center;-->
+		}
+		a:link, a:visited {
+			color: #000;
+		}
+		a:active, a:hover {
+			color: #666;
+		}
+		p.header {
+			font-size: small;
+		}
+		p.header span {
+			font-weight: bold;
+		}
+		p.footer {
+			font-size: x-small;
+		}
+		div.content {
+			margin: auto;
+			width: 960px;
+		}
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.missing img {
+			border-width: 0px;
+		}
+		div#unityPlayer {
+			cursor: default;
+			height: 600px;
+			width: 960px;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<p class="header"><span>CS4455 | Team "Tower Defense Reloaded" | </span>M3</p>
+		<div class="content">
+			<div id="unityPlayer">
+				<div class="missing">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<h2>Team Tower Defense Reloaded</h2>
+<h3>Team Members:</h3>
+<ul>
+<li>Brandon Whitehead <a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#98;&#114;&#x61;&#110;&#100;&#x6f;&#x6e;&#46;&#119;&#x68;&#105;&#x74;&#101;&#104;&#x65;&#x61;&#100;&#64;&#103;&#x61;&#116;&#x65;&#x63;&#104;&#x2e;&#101;&#x64;&#x75;">&#98;&#114;&#x61;&#110;&#100;&#x6f;&#x6e;&#46;&#119;&#x68;&#105;&#x74;&#101;&#104;&#x65;&#x61;&#100;&#64;&#103;&#x61;&#116;&#x65;&#x63;&#104;&#x2e;&#101;&#x64;&#x75;</a></li>
+<li>Dan Simmons <a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#100;&#115;&#105;&#109;&#109;&#111;&#110;&#115;&#x40;&#103;&#97;&#x74;&#101;&#x63;&#104;&#x2e;&#101;&#x64;&#x75;">&#100;&#115;&#105;&#109;&#109;&#111;&#110;&#115;&#x40;&#103;&#97;&#x74;&#101;&#x63;&#104;&#x2e;&#101;&#x64;&#x75;</a></li>
+<li>Jeffrey Portman <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#106;&#112;&#x6f;&#x72;&#x74;&#x6d;&#x61;&#x6e;&#x40;&#x67;&#x61;&#x74;&#101;&#99;&#104;&#x2e;&#101;&#x64;&#117;">&#106;&#112;&#x6f;&#x72;&#x74;&#x6d;&#x61;&#x6e;&#x40;&#x67;&#x61;&#x74;&#101;&#99;&#104;&#x2e;&#101;&#x64;&#117;</a></li>
+<li>Alex Trevor <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#x61;&#x74;&#x72;&#x65;&#x76;&#111;&#x72;&#64;&#x67;&#97;&#116;&#x65;&#x63;&#x68;&#46;&#x65;&#x64;&#x75;">&#x61;&#x74;&#x72;&#x65;&#x76;&#111;&#x72;&#64;&#x67;&#97;&#116;&#x65;&#x63;&#x68;&#46;&#x65;&#x64;&#x75;</a></li>
+</ul>
+<h3>Requirements Met:</h3>
+<ul>
+<li><em>Two or more instances of the game should establish connections to each
+other.</em></li>
+<li><em>The initial game state should be synchronized.</em></li>
+<li><em>The game should communicate all changes in state as the game
+progresses.</em></li>
+</ul>
+<p>  <strong>Known issue</strong>: initial state and subsequent synchronization is in-place
+  and working great.  One issue we&#39;re having that we were
+  unable to fix prior to the submission was that the character object
+  animations weren&#39;t being displayed between clients -- the movement
+  was present (looks as if players are gliding), but not the respective specific animations. We should be
+  able to figure out a solution before our next deliverable.
+
+</p>
+<h3>Install Instructions:</h3>
+<p>  Nothing special.  The Web Player should be straightforward and building the Unity project should work as well.  Let us know if you have issues!
+
+</p>
+<h3>Instructions To Grader:</h3>
+<p><strong>n</strong> to bring up the networking prompt.  Have one copy of Unity run
+&quot;<em>Be Server</em>&quot; and the other run &quot;<em>Connect To Server</em>&quot; to demonstrate network
+capability.  For the sake of the Web Player or a single Unity instance,
+&quot;<em>Be Server</em>&quot; essentially functions as a local-only game while no one is
+connected.
+
+</p>
+<p><strong><em>ASWD</em></strong> to move around.  <strong><em>Shift</em></strong> to sprint.  <strong><em>c</em></strong> to create one of
+the three towers of various respective types. <strong><em>Fire2</em></strong> (usually right click) to use knock-back effect (use the cylinders in the game to demonstrate).  <strong><em>Right CTRL</em></strong> to use the player&#39;s ability to shoot projectiles.
+
+</p>
+<p><strong>Objective:</strong> Enemies spawn from the red particle effect across the
+map.  Their behavior is to pathfind around the terrain and/or obstacles
+(namely, towers) towards the lighter particle effect, the destination.
+The objective of the game is to thwart their attempts at accomplishing
+the latter by strategically placing towers of various rates of fire,
+damage types, etc... across the terrain.
+
+</p>
+<p><strong>Note:</strong> Many game mechanics are proof-of-concept to some degree,
+namely tower creation/placement.  Currently there are no time, space, or
+resource limitations on placing new towers.  Further, towers presently
+have a very far (almost inifinite) projectle range with placeholder
+damage modifiers that simply shoot the closest enemy to them at any
+point in time.  Enemies currently spawn in somewhat of fixed increments
+of times rather than in &quot;levels&quot; or &quot;waves&quot; like we envision they will
+eventually.
+
+</p>
+<p>Currently, the focus was mainly on getting rudementary
+pathfinding, networking, and physics incorporated into the game, along
+with base game mechanics. Our plan going forth is to further refine the
+aforementioned and hammer out the rest of the functionality before our
+next/final deliverable.
+
+</p>
+<h3>Scene To Open:</h3>
+<p>&quot;Prototype&quot; scene.
+
+</p>
+<h3>Web Page URL:</h3>
+<p>http://dsimmons.github.com/CS4455_HW4
+</p>
